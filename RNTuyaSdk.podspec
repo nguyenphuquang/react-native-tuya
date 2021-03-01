@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
   s.homepage     = package['homepage']
   s.platforms    = { :ios => "9.0" }
 
-  s.source       = { :git => "https://github.com/Volst/react-native-tuya.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/nguyenphuquang/react-native-tuya.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'TuyaSmartHomeKit'
+  s.dependency 'TuyaSmartHomeKit', '~> 3.17.0'
 end
